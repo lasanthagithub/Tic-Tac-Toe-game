@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,6 +72,7 @@
             this.startNewGameToolStripMenuItem.Name = "startNewGameToolStripMenuItem";
             this.startNewGameToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.startNewGameToolStripMenuItem.Text = "Start New Game!";
+            this.startNewGameToolStripMenuItem.Click += new System.EventHandler(this.StartNewGameToolStripMenuItem_Click);
             // 
             // quitToolStripMenuItem
             // 
@@ -105,110 +106,110 @@
             // 
             // C1R1
             // 
-            this.C1R1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C1R1.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C1R1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C1R1.Location = new System.Drawing.Point(12, 42);
             this.C1R1.Name = "C1R1";
             this.C1R1.Size = new System.Drawing.Size(75, 75);
             this.C1R1.TabIndex = 1;
             this.C1R1.Tag = "";
-            this.C1R1.Text = "g";
+            this.C1R1.Text = "1";
             this.C1R1.UseVisualStyleBackColor = true;
             this.C1R1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C2R1
             // 
-            this.C2R1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2R1.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C2R1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C2R1.Location = new System.Drawing.Point(93, 42);
             this.C2R1.Name = "C2R1";
             this.C2R1.Size = new System.Drawing.Size(75, 75);
             this.C2R1.TabIndex = 2;
-            this.C2R1.Text = "T";
+            this.C2R1.Text = "2";
             this.C2R1.UseVisualStyleBackColor = true;
             this.C2R1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C3R1
             // 
-            this.C3R1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3R1.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C3R1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C3R1.Location = new System.Drawing.Point(174, 42);
             this.C3R1.Name = "C3R1";
             this.C3R1.Size = new System.Drawing.Size(75, 75);
             this.C3R1.TabIndex = 3;
-            this.C3R1.Text = "Y";
+            this.C3R1.Text = "3";
             this.C3R1.UseVisualStyleBackColor = true;
             this.C3R1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C1R2
             // 
-            this.C1R2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C1R2.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C1R2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C1R2.Location = new System.Drawing.Point(12, 123);
             this.C1R2.Name = "C1R2";
             this.C1R2.Size = new System.Drawing.Size(75, 75);
             this.C1R2.TabIndex = 4;
-            this.C1R2.Text = "f";
+            this.C1R2.Text = "4";
             this.C1R2.UseVisualStyleBackColor = true;
             this.C1R2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C2R2
             // 
-            this.C2R2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2R2.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C2R2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C2R2.Location = new System.Drawing.Point(93, 123);
             this.C2R2.Name = "C2R2";
             this.C2R2.Size = new System.Drawing.Size(75, 75);
             this.C2R2.TabIndex = 5;
-            this.C2R2.Text = "n";
+            this.C2R2.Text = "5";
             this.C2R2.UseVisualStyleBackColor = true;
             this.C2R2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C3R2
             // 
-            this.C3R2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3R2.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C3R2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C3R2.Location = new System.Drawing.Point(174, 123);
             this.C3R2.Name = "C3R2";
             this.C3R2.Size = new System.Drawing.Size(75, 75);
             this.C3R2.TabIndex = 6;
-            this.C3R2.Text = "i";
+            this.C3R2.Text = "6";
             this.C3R2.UseVisualStyleBackColor = true;
             this.C3R2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C1R3
             // 
-            this.C1R3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C1R3.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C1R3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C1R3.Location = new System.Drawing.Point(12, 204);
             this.C1R3.Name = "C1R3";
             this.C1R3.Size = new System.Drawing.Size(75, 75);
             this.C1R3.TabIndex = 7;
-            this.C1R3.Text = "c";
+            this.C1R3.Text = "7";
             this.C1R3.UseVisualStyleBackColor = true;
             this.C1R3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C2R3
             // 
-            this.C2R3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2R3.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C2R3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C2R3.Location = new System.Drawing.Point(93, 204);
             this.C2R3.Name = "C2R3";
             this.C2R3.Size = new System.Drawing.Size(75, 75);
             this.C2R3.TabIndex = 8;
-            this.C2R3.Text = "m";
+            this.C2R3.Text = "8";
             this.C2R3.UseVisualStyleBackColor = true;
             this.C2R3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C3R3
             // 
-            this.C3R3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3R3.Font = new System.Drawing.Font("Microsoft Sans Serif", 2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C3R3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C3R3.Location = new System.Drawing.Point(174, 204);
             this.C3R3.Name = "C3R3";
             this.C3R3.Size = new System.Drawing.Size(75, 75);
             this.C3R3.TabIndex = 9;
-            this.C3R3.Text = "u";
+            this.C3R3.Text = "9";
             this.C3R3.UseVisualStyleBackColor = true;
             this.C3R3.Click += new System.EventHandler(this.ButtonClick);
             // 
