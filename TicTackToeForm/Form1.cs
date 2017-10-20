@@ -16,5 +16,18 @@ namespace TicTackToeForm
         {
             InitializeComponent();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Author: Lasantha Rathnayake");
+        }
+
+        private void howToPlayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("To play this game you need two players. " +
+                "Player 1 and 2 slect simbols 'X' and 'O', respectively. "+
+                "You need to place three of your marks" +
+                " in a horizontal, vertical or diagonal row to win the game");
+        }
     }
 }

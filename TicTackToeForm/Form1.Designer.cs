@@ -43,6 +43,7 @@
             this.C1R3 = new System.Windows.Forms.Button();
             this.C2R3 = new System.Windows.Forms.Button();
             this.C3R3 = new System.Windows.Forms.Button();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +82,7 @@
             // helpMeToolStripMenuItem
             // 
             this.helpMeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
             this.howToPlayToolStripMenuItem});
             this.helpMeToolStripMenuItem.Name = "helpMeToolStripMenuItem";
             this.helpMeToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
@@ -91,6 +93,7 @@
             this.howToPlayToolStripMenuItem.Name = "howToPlayToolStripMenuItem";
             this.howToPlayToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.howToPlayToolStripMenuItem.Text = "How to play?";
+            this.howToPlayToolStripMenuItem.Click += new System.EventHandler(this.howToPlayToolStripMenuItem_Click);
             // 
             // C1R1
             // 
@@ -173,6 +176,13 @@
             this.C3R3.TabIndex = 9;
             this.C3R3.UseVisualStyleBackColor = true;
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +226,7 @@
         private System.Windows.Forms.Button C1R3;
         private System.Windows.Forms.Button C2R3;
         private System.Windows.Forms.Button C3R3;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 
