@@ -78,6 +78,7 @@
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.quitToolStripMenuItem.Text = "Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // helpMeToolStripMenuItem
             // 
@@ -103,6 +104,7 @@
             this.C1R1.Size = new System.Drawing.Size(75, 75);
             this.C1R1.TabIndex = 1;
             this.C1R1.UseVisualStyleBackColor = true;
+            this.C1R1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C2R1
             // 
@@ -112,6 +114,7 @@
             this.C2R1.Size = new System.Drawing.Size(75, 75);
             this.C2R1.TabIndex = 2;
             this.C2R1.UseVisualStyleBackColor = true;
+            this.C2R1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C3R1
             // 
@@ -121,6 +124,7 @@
             this.C3R1.Size = new System.Drawing.Size(75, 75);
             this.C3R1.TabIndex = 3;
             this.C3R1.UseVisualStyleBackColor = true;
+            this.C3R1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C1R2
             // 
@@ -130,6 +134,7 @@
             this.C1R2.Size = new System.Drawing.Size(75, 75);
             this.C1R2.TabIndex = 4;
             this.C1R2.UseVisualStyleBackColor = true;
+            this.C1R2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C2R2
             // 
@@ -139,6 +144,7 @@
             this.C2R2.Size = new System.Drawing.Size(75, 75);
             this.C2R2.TabIndex = 5;
             this.C2R2.UseVisualStyleBackColor = true;
+            this.C2R2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C3R2
             // 
@@ -148,6 +154,7 @@
             this.C3R2.Size = new System.Drawing.Size(75, 75);
             this.C3R2.TabIndex = 6;
             this.C3R2.UseVisualStyleBackColor = true;
+            this.C3R2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C1R3
             // 
@@ -157,6 +164,7 @@
             this.C1R3.Size = new System.Drawing.Size(75, 75);
             this.C1R3.TabIndex = 7;
             this.C1R3.UseVisualStyleBackColor = true;
+            this.C1R3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C2R3
             // 
@@ -166,6 +174,7 @@
             this.C2R3.Size = new System.Drawing.Size(75, 75);
             this.C2R3.TabIndex = 8;
             this.C2R3.UseVisualStyleBackColor = true;
+            this.C2R3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C3R3
             // 
@@ -175,6 +184,7 @@
             this.C3R3.Size = new System.Drawing.Size(75, 75);
             this.C3R3.TabIndex = 9;
             this.C3R3.UseVisualStyleBackColor = true;
+            this.C3R3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // aboutToolStripMenuItem
             // 
@@ -201,6 +211,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TicTacToe";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Play Tic Tac Toe!";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
