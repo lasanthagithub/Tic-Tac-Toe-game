@@ -14,7 +14,7 @@ namespace TicTackToeForm
     {
         // Deside the player
         bool playerTurn = true; // If this = true, 'X''s turn else 'O''s turn
-        int palyCount = 0; // To determine how many turns that both palyers get max
+        int playCount = 0; // To determine how many turns that both palyers get max
 
         public TicTacToe()
         {
@@ -22,13 +22,13 @@ namespace TicTackToeForm
         }
 
         // 'Info' menu item 'About'
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Author: Lasantha Rathnayake");
         }
 
         // 'Info' menu item 'How to Play?'
-        private void howToPlayToolStripMenuItem_Click(object sender, EventArgs e)
+        private void HowToPlayToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("To play this game you need two players. " +
                 "Player 1 and 2 slect simbols 'X' and 'O', respectively. "+
@@ -37,7 +37,7 @@ namespace TicTackToeForm
         }
 
         // 'File' menu item 'Quit?'
-        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void QuitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -49,6 +49,7 @@ namespace TicTackToeForm
             Button button = (Button)sender;
 
             // Assign a value for the button text
+            button.Text = "*";
             if (playerTurn)
             {
                 button.Text = "X";
@@ -60,8 +61,48 @@ namespace TicTackToeForm
                 button.Text = "O";
                 playerTurn = true;
             }
+
+            playCount++;
             button.Enabled = false;
 
+            // Calling method to determine a winner
+            if (DetermineWinner(button.Text))
+                button.Enabled = true;
         }
+
+
+        // To determine whether their is a winner or not
+        private bool DetermineWinner(string bText)      
+            {
+
+                bool isWinner = false;
+
+                if ((C1R1.Text == C2R1.Text && C2R1.Text == C3R1.Text) ||
+                    (C1R2.Text == C2R2.Text && C2R2.Text == C3R2.Text) ||
+                    (C1R3.Text == C2R3.Text && C2R3.Text == C3R3.Text) ||
+                    (C1R1.Text == C1R2.Text && C1R2.Text == C1R3.Text) ||
+                    (C2R1.Text == C2R2.Text && C2R2.Text == C2R3.Text) ||
+                    (C3R1.Text == C3R2.Text && C3R2.Text == C3R3.Text) ||
+                    (C1R1.Text == C2R2.Text && C2R2.Text == C3R3.Text) ||
+                    (C3R1.Text == C2R2.Text && C2R2.Text == C1R3.Text))
+                {
+                    isWinner = true;
+                }
+                    
+
+            if (isWinner)
+                {           
+
+                    MessageBox.Show("Congradualations!!! The winnwe is: "+ bText);
+                }
+                       
+            else if (playCount == 9 && !isWinner)
+                {
+                    MessageBox.Show("No winner. The game is draw.");
+                }
+            return isWinner;
+        }
+
+        
     }
 }

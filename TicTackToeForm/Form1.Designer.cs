@@ -33,6 +33,7 @@
             this.startNewGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.howToPlayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.C1R1 = new System.Windows.Forms.Button();
             this.C2R1 = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.C1R3 = new System.Windows.Forms.Button();
             this.C2R3 = new System.Windows.Forms.Button();
             this.C3R3 = new System.Windows.Forms.Button();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.quitToolStripMenuItem.Text = "Quit";
-            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.QuitToolStripMenuItem_Click);
             // 
             // helpMeToolStripMenuItem
             // 
@@ -89,109 +89,128 @@
             this.helpMeToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.helpMeToolStripMenuItem.Text = "Info";
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+            // 
             // howToPlayToolStripMenuItem
             // 
             this.howToPlayToolStripMenuItem.Name = "howToPlayToolStripMenuItem";
-            this.howToPlayToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.howToPlayToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.howToPlayToolStripMenuItem.Text = "How to play?";
-            this.howToPlayToolStripMenuItem.Click += new System.EventHandler(this.howToPlayToolStripMenuItem_Click);
+            this.howToPlayToolStripMenuItem.Click += new System.EventHandler(this.HowToPlayToolStripMenuItem_Click);
             // 
             // C1R1
             // 
             this.C1R1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C1R1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C1R1.Location = new System.Drawing.Point(12, 42);
             this.C1R1.Name = "C1R1";
             this.C1R1.Size = new System.Drawing.Size(75, 75);
             this.C1R1.TabIndex = 1;
+            this.C1R1.Tag = "";
+            this.C1R1.Text = "g";
             this.C1R1.UseVisualStyleBackColor = true;
             this.C1R1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C2R1
             // 
             this.C2R1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2R1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C2R1.Location = new System.Drawing.Point(93, 42);
             this.C2R1.Name = "C2R1";
             this.C2R1.Size = new System.Drawing.Size(75, 75);
             this.C2R1.TabIndex = 2;
+            this.C2R1.Text = "T";
             this.C2R1.UseVisualStyleBackColor = true;
             this.C2R1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C3R1
             // 
             this.C3R1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3R1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C3R1.Location = new System.Drawing.Point(174, 42);
             this.C3R1.Name = "C3R1";
             this.C3R1.Size = new System.Drawing.Size(75, 75);
             this.C3R1.TabIndex = 3;
+            this.C3R1.Text = "Y";
             this.C3R1.UseVisualStyleBackColor = true;
             this.C3R1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C1R2
             // 
             this.C1R2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C1R2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C1R2.Location = new System.Drawing.Point(12, 123);
             this.C1R2.Name = "C1R2";
             this.C1R2.Size = new System.Drawing.Size(75, 75);
             this.C1R2.TabIndex = 4;
+            this.C1R2.Text = "f";
             this.C1R2.UseVisualStyleBackColor = true;
             this.C1R2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C2R2
             // 
             this.C2R2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2R2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C2R2.Location = new System.Drawing.Point(93, 123);
             this.C2R2.Name = "C2R2";
             this.C2R2.Size = new System.Drawing.Size(75, 75);
             this.C2R2.TabIndex = 5;
+            this.C2R2.Text = "n";
             this.C2R2.UseVisualStyleBackColor = true;
             this.C2R2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C3R2
             // 
             this.C3R2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3R2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C3R2.Location = new System.Drawing.Point(174, 123);
             this.C3R2.Name = "C3R2";
             this.C3R2.Size = new System.Drawing.Size(75, 75);
             this.C3R2.TabIndex = 6;
+            this.C3R2.Text = "i";
             this.C3R2.UseVisualStyleBackColor = true;
             this.C3R2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C1R3
             // 
             this.C1R3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C1R3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C1R3.Location = new System.Drawing.Point(12, 204);
             this.C1R3.Name = "C1R3";
             this.C1R3.Size = new System.Drawing.Size(75, 75);
             this.C1R3.TabIndex = 7;
+            this.C1R3.Text = "c";
             this.C1R3.UseVisualStyleBackColor = true;
             this.C1R3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C2R3
             // 
             this.C2R3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2R3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C2R3.Location = new System.Drawing.Point(93, 204);
             this.C2R3.Name = "C2R3";
             this.C2R3.Size = new System.Drawing.Size(75, 75);
             this.C2R3.TabIndex = 8;
+            this.C2R3.Text = "m";
             this.C2R3.UseVisualStyleBackColor = true;
             this.C2R3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // C3R3
             // 
             this.C3R3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3R3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.C3R3.Location = new System.Drawing.Point(174, 204);
             this.C3R3.Name = "C3R3";
             this.C3R3.Size = new System.Drawing.Size(75, 75);
             this.C3R3.TabIndex = 9;
+            this.C3R3.Text = "u";
             this.C3R3.UseVisualStyleBackColor = true;
             this.C3R3.Click += new System.EventHandler(this.ButtonClick);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // TicTacToe
             // 
