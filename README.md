@@ -4,7 +4,8 @@
 This game is written in C#/Visual Studio 2017 combination and runs in Windows 10. 
 To build the program, open the solution file (TicTackToeForm.sln) in Visual Studio 2017 
 and Run the project in Debug mode. This process creates an executable file (TicTackToeForm.exe)
-that can execute in Windows environment.
+that can execute in Windows environment. The main logic of the program is included in
+Form1.cs file. 
 
 To run the game, please double click the TicTackToeForm.exe executable.
 
