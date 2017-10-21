@@ -112,17 +112,23 @@ namespace TicTackToeForm
         // Print the winner in a message box
         private void GetWinner(string winner_)
         {
-            MessageBox.Show("Congradualations!!! The winner is: "+ winner_);
+            MessageBox.Show("congratulations!!! The winner is: " + winner_);
         }
 
         // Resetting the game to restart a new round of the game
         private void StartNewGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            List<Button> buttons = new List<Button> { C1R1, C1R2, C1R3, C2R1, C2R2, C2R3, C3R1, C3R2, C3R3 };
+            // Creating a button list to reset each button
+            List<Button> buttons = new List<Button>
+                    { C1R1, C1R2, C1R3, C2R1, C2R2, C2R3, C3R1, C3R2, C3R3 };
             int num = 0;
+
+            // Reset common variables
             isWinner = false;
             winner = "";
             playCount = 0;
+
+            // Looping through each button and reset them
             foreach (Button btn in buttons)
             {
                 string i = num.ToString();
