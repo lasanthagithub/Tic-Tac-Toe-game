@@ -12,12 +12,13 @@ namespace TicTackToeForm
 {
     public partial class TicTacToe : Form
     {
-        // Deside the player
+        // Define innitial variables
         bool playerTurn = true; // If this = true, 'X''s turn else 'O''s turn
         int playCount = 0; // To determine how many turns that both palyers get max
         bool isWinner = false; // To determine a winner
         string winner = "";
 
+        // Innitializing the form components
         public TicTacToe()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace TicTackToeForm
         // 'Info' menu item 'About'
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Author: Lasantha Rathnayake");
+            MessageBox.Show("Author: Lasantha Rathnayake; Date: 10/20/2017");
         }
 
         // 'Info' menu item 'How to Play?'
@@ -52,12 +53,12 @@ namespace TicTackToeForm
             
             if (!isWinner)
             {
-                // create a button object from the sender parameter
+                // creating a button object from the sender parameter
                 Button button = (Button)sender;
 
                 if (playerTurn)
                 {
-                    button.Text = "X";
+                    button.Text = "X"; 
                     playerTurn = false;
                 }
 
@@ -68,12 +69,12 @@ namespace TicTackToeForm
                 }
 
                 playCount++;
-                button.Enabled = false;
+                button.Enabled = false; // Disabling the button
                 button.Font = new System.Drawing.Font("Microsoft Sans Serif",
                     28F, System.Drawing.FontStyle.Regular,
                     System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
-                // Calling method to determine a winner isComplete =
+                // Calling the method to determine a winner
                 DetermineWinner(button);
             }
 
@@ -88,7 +89,7 @@ namespace TicTackToeForm
         private void DetermineWinner(Button b)      
             {
 
-                // These are the all potential winning combinations
+                // These are the potential winning combinations
                 if ((C1R1.Text == C2R1.Text && C2R1.Text == C3R1.Text) ||
                     (C1R2.Text == C2R2.Text && C2R2.Text == C3R2.Text) ||
                     (C1R3.Text == C2R3.Text && C2R3.Text == C3R3.Text) ||
@@ -109,7 +110,7 @@ namespace TicTackToeForm
                 }
             }
 
-        // Print the winner in a message box
+        // Printing the winner in a message box
         private void GetWinner(string winner_)
         {
             MessageBox.Show("congratulations!!! The winner is: " + winner_);
@@ -123,7 +124,7 @@ namespace TicTackToeForm
                     { C1R1, C1R2, C1R3, C2R1, C2R2, C2R3, C3R1, C3R2, C3R3 };
             int num = 0;
 
-            // Reset common variables
+            // Resetting common variables
             isWinner = false;
             winner = "";
             playCount = 0;
