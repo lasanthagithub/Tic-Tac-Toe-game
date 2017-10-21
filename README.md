@@ -11,7 +11,7 @@ To run the game, please double click the TicTackToeForm.exe executable.
 
 ## How to play the game?
 
-This game is designed to play for two persons('X' and 'O').
+This game is designed to play for two persons ('X' and 'O').
 
 Always 'X' goes first. The player who places three of their marks 
 in a horizontal, vertical or diagonal row, win the game. 
