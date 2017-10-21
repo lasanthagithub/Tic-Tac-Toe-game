@@ -37,7 +37,7 @@ namespace TicTackToeForm
                 "Player 1 and 2 slect simbols 'X' and 'O', respectively. "+
                 "You need to place three of your marks" +
                 " in a horizontal, vertical or diagonal row to win the game. " +
-                "The player 'X' goes first");
+                "The player 'X' goes first.");
         }
 
         // 'File' menu item 'Quit?'
@@ -79,8 +79,8 @@ namespace TicTackToeForm
             }
 
             else if (isWinner)
-                MessageBox.Show("The game is over. The winner is: "+ winner + 
-                    ". Please restart for a new game");
+                MessageBox.Show("The game is over! The winner is: "+ winner + 
+                    ". Please restart for a new game.");
 
         }
 
