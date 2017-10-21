@@ -12,13 +12,13 @@ namespace TicTackToeForm
 {
     public partial class TicTacToe : Form
     {
-        // Define innitial variables
+        // Define initial variables
         bool playerTurn = true; // If this = true, 'X''s turn else 'O''s turn
-        int playCount = 0; // To determine how many turns that both palyers get max
+        int playCount = 0; // To determine how many turns that both players get max
         bool isWinner = false; // To determine a winner
         string winner = "";
 
-        // Innitializing the form components
+        // Initializing the form components
         public TicTacToe()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace TicTackToeForm
         private void HowToPlayToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("To play this Tic Tac Toe game, you need two to have players. " +
-                "Player 1 and 2 slect simbols 'X' and 'O', respectively. "+
+                "Player 1 and 2 select symbols 'X' and 'O', respectively. " +
                 "You need to place three of your marks" +
                 " in a horizontal, vertical or diagonal row to win the game. " +
                 "The player 'X' goes first.");
@@ -85,7 +85,7 @@ namespace TicTackToeForm
         }
 
 
-        // To determine whether their is a winner or not
+        // To determine whether there is a winner or not
         private void DetermineWinner(Button b)      
             {
 
