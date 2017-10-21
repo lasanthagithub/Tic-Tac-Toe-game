@@ -1,11 +1,14 @@
 # Play Tic Tac Toe!!!
 
-## Program development and executable
-This game is written in C#/Visual Studio 2017 combination and runs in Windows 10. To build the program open the solution file (TicTackToeForm.sln) in Visual Studio 2017 and Run the project in Debug mode. This process creates executable file (TicTackToeForm.exe).
+## The program development and executables
+This game is written in C#/Visual Studio 2017 combination and runs in Windows 10. 
+To build the program, open the solution file (TicTackToeForm.sln) in Visual Studio 2017 
+and Run the project in Debug mode. This process creates an executable file (TicTackToeForm.exe)
+that can execute in Windows environment.
 
-To run the game, please execute the TicTackToeForm.exe executable.
+To run the game, please double click the TicTackToeForm.exe executable.
 
-## Introduction to play the game
+## How to play the game?
 
 This game is designed for two persons to play, 'X' and 'O'.
 
@@ -18,4 +21,4 @@ If you want you to play again, you can rest the game for a new play as follows.
 
 * File > Start New Game!
 
-## Enjoy the game!!!
+# Enjoy the game!!!
